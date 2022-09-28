@@ -1,0 +1,6 @@
+.subjects-container {
+  margin-top: 20px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+}
