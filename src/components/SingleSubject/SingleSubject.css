@@ -1,14 +1,32 @@
+* {
+  margin: 0;
+}
+
 .subject-details {
-  height: 350px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   border: 2px solid #5f6f94;
   text-align: center;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
-
+.subject-info {
+}
 .img {
   width: 90%;
   height: 200px;
+}
+.add-to-list-btn {
+  padding: 8px 5px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  bottom: -15px;
+  background: #dff6ff;
+  border-radius: 10px;
+  border: none;
+}
+.add-to-list-btn:hover {
+  background: #47b5ff;
 }

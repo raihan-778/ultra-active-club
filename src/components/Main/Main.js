@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ActivityCart from "../ActivityCart/ActivityCart";
 
 import "./Main.css";
-import Subjects from "./Subjects/Subjects";
+import Subjects from "../Subjects/Subjects";
 
 const Main = () => {
   const [subjects, setSubjects] = useState([]);
