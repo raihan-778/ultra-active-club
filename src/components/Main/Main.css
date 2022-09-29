@@ -6,3 +6,10 @@
   color: #dff6ff;
   padding-bottom: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
