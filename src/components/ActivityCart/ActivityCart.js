@@ -1,13 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./ActivityCart.css";
-import { toast } from "react-toastify";
-
-// Import toastify css file
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-import Swal from "sweetalert2";
-
-// CommonJS
 
 const ActivityCart = ({ duration }) => {
   const [breakTime, setBreakTime] = useState("");
@@ -27,13 +21,10 @@ const ActivityCart = ({ duration }) => {
   };
 
   //Toast animations
-  const handelToast = () => {
-    Swal.fire({
-      position: "top-end",
-      icon: "success",
-      title: "Welldone! You have completed the task",
-      showConfirmButton: false,
-      timer: 1500,
+
+  const showToastMessage = () => {
+    toast.success("Welldone! You have Completed all tasks!", {
+      position: toast.POSITION.TOP_RIGHT,
     });
   };
 
@@ -83,9 +74,10 @@ const ActivityCart = ({ duration }) => {
             Break Time <span className="duration-count">{breakTime}</span>
           </h2>
         </div>
-        <button onClick={handelToast} className="complited-btn">
+        <button onClick={showToastMessage} className="complited-btn">
           Activity Complited
         </button>
+        <ToastContainer />
       </div>
     </div>
   );
