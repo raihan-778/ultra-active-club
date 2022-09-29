@@ -11,9 +11,13 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  border-radius: 15px;
+
+  -webkit-box-shadow: inset 10px 14px 13px -3px rgba(223, 246, 255, 0.47);
+  -moz-box-shadow: inset 10px 14px 13px -3px rgba(223, 246, 255, 0.47);
+  box-shadow: inset 10px 14px 13px -3px rgba(223, 246, 255, 0.47);
 }
-.subject-info {
-}
+
 .img {
   width: 90%;
   height: 200px;

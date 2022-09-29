@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ActivityCart.css";
 
-const ActivityCart = ({ duration, breakTime, setBreakTime }) => {
+const ActivityCart = ({ duration }) => {
   const [breakTime, setBreakTime] = useState("");
   // Break time event handler
   const handleShowBreakTime = (e) => {
-    setBreakTime(e.traget.innerHTML);
-    console.log(e.traget.innerText);
+    console.log(e.target.innerHTML);
+    setBreakTime(e.target.innerHTML);
   };
 
   return (
@@ -19,27 +19,29 @@ const ActivityCart = ({ duration, breakTime, setBreakTime }) => {
         <div className="break-info">
           <h3>Break Time</h3>
           <button
-            onClick={(e) => this.handleShowBreakTime(e)}
+            onClick={(id) => this.handleShowBreakTime(id)}
             className="break-btn"
+            id="1"
           >
             3d
           </button>
           <button
-            onClick={(e) => this.handleShowBreakTime(e)}
+            onClick={(id) => this.handleShowBreakTime(id)}
             className="break-btn"
+            id="2"
           >
             7d
           </button>
-          <button onClick={handleShowBreakTime} className="break-btn">
+          <button onClick={handleShowBreakTime} id="3" className="break-btn">
             10d
           </button>
-          <button onClick={handleShowBreakTime} className="break-btn">
+          <button onClick={handleShowBreakTime} id="4" className="break-btn">
             15d
           </button>
         </div>
         <div className="study-duration">
           <h2>
-            Learning Time{" "}
+            Learning Time
             <span className="duration-count">{duration} days</span>
           </h2>
           <h2>

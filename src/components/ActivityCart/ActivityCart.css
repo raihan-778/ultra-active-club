@@ -35,12 +35,13 @@
   text-align: right;
   border-radius: 10px;
   margin-left: 10px;
+  font-size: 12px;
 }
 .study-duration {
   margin: 20px 10px;
 }
 .study-duration h2 {
-  margin: 20px 0;
+  margin: 14px 0;
 }
 .complited-btn {
   background-color: #6f38c5;
