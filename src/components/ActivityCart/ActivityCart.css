@@ -1,3 +1,57 @@
 .activity-description {
   background: #8bbccc;
+  color: #000000;
+  padding: 5px 20px;
+  position: sticky;
+  top: 20px;
+  right: 0;
+  margin-top: 20px;
+  margin: 20px 5px;
+  border-radius: 20px;
+}
+
+.activity-description img {
+  width: 20%;
+}
+.break-info {
+  margin: 20px auto;
+}
+.break-btn {
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  margin: 10px 5px;
+  border: none;
+  font-weight: 600;
+}
+.break-btn:hover {
+  background-color: #6f38c5;
+}
+.duration-count {
+  background: #e8dfca;
+  color: #000000;
+  padding: 5px 10px;
+  text-align: right;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.study-duration {
+  margin: 20px 10px;
+}
+.study-duration h2 {
+  margin: 20px 0;
+}
+.complited-btn {
+  background-color: #6f38c5;
+  border-radius: 15px;
+  padding: 15px 35px;
+  color: #e8dfca;
+  border: none;
+  margin: 10px auto;
+  font-weight: 600;
+  font-size: 24px;
+}
+.complited-btn:hover {
+  background-color: #256d85;
 }

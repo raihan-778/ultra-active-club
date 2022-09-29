@@ -22,7 +22,7 @@
   },
   {
     "id": "633451ec11ad053fa0bab126",
-    "time": "$1,930.32",
+    "time": 120,
     "img": "https://img.freepik.com/free-vector/young-boy-laptop-python-concept_1308-21146.jpg?w=740&t=st=1664373793~exp=1664374393~hmac=7b9c0bd526a6b7e28287be5e638defd0818c0ac47cae6d3332e1df4fb71cda71",
     "age": 31,
     "name": "Python"
@@ -42,7 +42,7 @@
     "name": "Back-End_Database"
   },
   {
-    "id": "633451ec6042442bd52455f0",
+    "id": "633451ec6042442bd562455f0",
     "time": 7,
     "img": "https://img.freepik.com/free-vector/programmer-working-with-css_52683-24172.jpg?w=740&t=st=1664376370~exp=1664376970~hmac=6688a6008a8c8962b699d3bb06a219775f66f22a3f4a96f04d9597bb8d73eeb1",
     "age": 29,

@@ -1,8 +1,8 @@
 import React from "react";
 import "./SingleSubject.css";
 
-const SingleSubject = ({ subject }) => {
-  console.log(subject);
+const SingleSubject = ({ subject, handelAddToList }) => {
+  // console.log(subject);
   const { id, name, age, img, time } = subject;
 
   return (
@@ -16,7 +16,13 @@ const SingleSubject = ({ subject }) => {
           <p>
             <small>Age limit: {age}</small>
           </p>
-          <button className="add-to-list-btn"> Add To List</button>
+          <button
+            onClick={() => handelAddToList(id)}
+            className="add-to-list-btn"
+          >
+            {" "}
+            Add To List
+          </button>
         </div>
       </div>
     </div>
