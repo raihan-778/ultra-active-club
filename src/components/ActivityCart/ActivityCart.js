@@ -18,24 +18,16 @@ const ActivityCart = ({ duration }) => {
         </div>
         <div className="break-info">
           <h3>Break Time</h3>
-          <button
-            onClick={(id) => this.handleShowBreakTime(id)}
-            className="break-btn"
-            id="1"
-          >
+          <button onClick={handleShowBreakTime} className="break-btn">
             3d
           </button>
-          <button
-            onClick={(id) => this.handleShowBreakTime(id)}
-            className="break-btn"
-            id="2"
-          >
+          <button onClick={handleShowBreakTime} className="break-btn">
             7d
           </button>
-          <button onClick={handleShowBreakTime} id="3" className="break-btn">
+          <button onClick={handleShowBreakTime} className="break-btn">
             10d
           </button>
-          <button onClick={handleShowBreakTime} id="4" className="break-btn">
+          <button onClick={handleShowBreakTime} className="break-btn">
             15d
           </button>
         </div>
@@ -45,7 +37,7 @@ const ActivityCart = ({ duration }) => {
             <span className="duration-count">{duration} days</span>
           </h2>
           <h2>
-            Break Time <span className="duration-count">{breakTime} days</span>
+            Break Time <span className="duration-count">{breakTime}</span>
           </h2>
         </div>
         <button className="complited-btn">Activity Complited</button>
