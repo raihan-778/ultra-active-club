@@ -12,27 +12,18 @@ import Swal from "sweetalert2";
 const ActivityCart = ({ duration }) => {
   const [breakTime, setBreakTime] = useState("");
 
-  useEffect(() => {
-    const storedData = findBreakTime();
-    console.log(storedData);
-  }, [breakTime]);
   // Break time event handler
+  useEffect(() => {
+    const getFromLocal = JSON.parse(localStorage.getItem("breakTime"));
+    if (getFromLocal) {
+      setBreakTime(getFromLocal);
+    }
+  }, []);
 
   const handleShowBreakTime = (e) => {
-    console.log(e.target.innerHTML);
-    localStorage.setItem("breakTime", e.target.innerHTML);
+    console.log(typeof e.target.innerHTML);
     setBreakTime(e.target.innerHTML);
-  };
-
-  const findBreakTime = () => {
-    let getStoredBreakTime = {};
-
-    //get the shopping cart from local storage
-    const storedTime = localStorage.getItem("breakTimer");
-    if (storedTime) {
-      getStoredBreakTime = JSON.parse(storedTime);
-    }
-    return getStoredBreakTime;
+    localStorage.setItem("breakTime", JSON.stringify(breakTime));
   };
 
   //Toast animations

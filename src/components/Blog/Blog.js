@@ -56,34 +56,28 @@ const Blog = () => {
         <strong>Answer: </strong>Here is some use case of useEffect except load
         api data.
         <br />
-        <ol>
-          <li>
-            <strong>Running on state change:</strong> live filtering We can use
-            useEffect to filter an array "on the fly" by typing letters into an
-            input element. To do so, we will need to use a state to save the
-            input, and a filter implementation inside the useEffect that will be
-            triggered when the input changes, thanks to useEffect dependencies.
-          </li>
-          <li>
-            <strong>
-              Running on state change trigger animation on new array value:
-            </strong>{" "}
-            We can use the useEffect hook to trigger an animation on a shopping
-            cart as a side effect of adding a new product to it. In this case,
-            we'll need a state to handle the cart items, and another state to
-            handle the animation trigger.
-          </li>
-          <li>
-            <strong>
-              Running on props change: update paragraph list on fetched API data
-              update
-            </strong>
-            In this use case, we want to trigger a state update due to an
-            updated fetch() call. We are sending the fetched data to a child
-            component, and whenever that data is changed, the child component
-            re-process it.
-          </li>
-        </ol>
+        <strong>Running on state change:</strong> live filtering We can use
+        useEffect to filter an array "on the fly" by typing letters into an
+        input element. To do so, we will need to use a state to save the input,
+        and a filter implementation inside the useEffect that will be triggered
+        when the input changes, thanks to useEffect dependencies.
+        <br />
+        <strong>
+          Running on state change trigger animation on new array value:
+        </strong>{" "}
+        We can use the useEffect hook to trigger an animation on a shopping cart
+        as a side effect of adding a new product to it. In this case, we'll need
+        a state to handle the cart items, and another state to handle the
+        animation trigger.
+        <br />
+        <strong>
+          Running on props change: update paragraph list on fetched API data
+          update
+        </strong>
+        In this use case, we want to trigger a state update due to an updated
+        fetch() call. We are sending the fetched data to a child component, and
+        whenever that data is changed, the child component re-process it.
+        <br />
       </p>
     </div>
   );
