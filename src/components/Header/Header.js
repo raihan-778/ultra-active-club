@@ -1,15 +1,14 @@
 import React from "react";
 import "./Header.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import "@fortawesome/fontawesome-svg-core/styles.css";
-// import { faJar } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
+  const img =
+    "https://previews.123rf.com/images/wikagraphic/wikagraphic2011/wikagraphic201130562/159405373-initial-letter-js-logotype-company-name-colored-blue-swoosh-design-concept-vector-logo-for-business-.jpg";
+
   return (
     <div className="header">
-      {/* <FontAwesomeIcon icon={faJar} /> */}
-
-      <h2>To-Be-A-Web-Developre-Journy</h2>
+      <img src={img} alt="" />
+      <h2>To-Be-A-Web-Developer-Journey</h2>
     </div>
   );
 };

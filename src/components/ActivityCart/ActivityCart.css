@@ -56,3 +56,18 @@
 .complited-btn:hover {
   background-color: #256d85;
 }
+.personal-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #256d85;
+  background: #2b4865;
+  color: antiquewhite;
+  font-weight: 500;
+}
+.physical-info {
+  border-radius: 20px;
+  border: 2px solid #8fe3cf;
+  padding: 15px;
+}

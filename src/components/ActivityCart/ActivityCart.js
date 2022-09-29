@@ -40,9 +40,23 @@ const ActivityCart = ({ duration }) => {
   return (
     <div>
       <div className="activity-description">
-        <div className="personal-info">
+        <div className="info">
           <h2>Md Raihan Uddin</h2>
           <h4>Address: CDA R/A. Colonel Hat, Chittagong</h4>
+          <div className="personal-info">
+            <div className="physical-info">
+              <small>Age</small>
+              <p>36Years</p>
+            </div>
+            <div className="physical-info">
+              <small>Height</small>
+              <p>5.5"</p>
+            </div>
+            <div className="physical-info">
+              <small>Weight</small>
+              <p>69 kg</p>
+            </div>
+          </div>
         </div>
         <div className="break-info">
           <h3>Break Time</h3>
