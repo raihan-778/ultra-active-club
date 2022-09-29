@@ -12,7 +12,7 @@ const SingleSubject = ({ subject, handelAddToList }) => {
 
         <div className="subject-info">
           <h2>{name}</h2>
-          <p> Learning Duration: {time}</p>
+          <p> Learning Duration: {time} Days</p>
           <p>
             <small>Age limit: {age}</small>
           </p>
@@ -20,7 +20,6 @@ const SingleSubject = ({ subject, handelAddToList }) => {
             onClick={() => handelAddToList(id)}
             className="add-to-list-btn"
           >
-            {" "}
             Add To List
           </button>
         </div>
