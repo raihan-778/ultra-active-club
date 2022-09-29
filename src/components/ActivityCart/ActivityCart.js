@@ -15,7 +15,7 @@ const ActivityCart = ({ duration }) => {
   }, []);
 
   const handleShowBreakTime = (e) => {
-    console.log(typeof e.target.innerHTML);
+    console.log(e.target.innerHTML);
     setBreakTime(e.target.innerHTML);
     localStorage.setItem("breakTime", JSON.stringify(breakTime));
   };
