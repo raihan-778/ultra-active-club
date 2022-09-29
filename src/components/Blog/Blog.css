@@ -5,9 +5,18 @@
   background: #256d85;
   color: #dff6ff;
 }
-.blog-container li {
-  list-style: none;
-}
+
 .blog-container p {
   font-size: 16px;
+}
+.blog-qa {
+  background: #06283d;
+  color: #eae3d2;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.blog-qa h2 {
+  margin-bottom: 10px;
 }
