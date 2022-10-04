@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./ActivityCart.css";
-import { ToastContainer, toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "./ActivityCart.css";
 
 const ActivityCart = ({ duration }) => {
   const [breakTime, setBreakTime] = useState("");
@@ -16,8 +16,9 @@ const ActivityCart = ({ duration }) => {
 
   const handleShowBreakTime = (e) => {
     console.log(e.target.innerHTML);
+
     setBreakTime(e.target.innerHTML);
-    localStorage.setItem("breakTime", JSON.stringify(breakTime));
+    localStorage.setItem("breakTime", JSON.stringify(e.target.innerHTML));
   };
 
   //Toast animations
